@@ -1,10 +1,10 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, MapPin, Calendar } from 'lucide-react';
-import { useInView } from 'react-intersection-observer';
-import Button from '../../components/Button/Button';
-import Card from '../../components/Card/Card';
-import styles from './About.module.scss';
+import React from "react";
+import { motion } from "framer-motion";
+import { Github, Linkedin, Mail, MapPin, Calendar } from "lucide-react";
+import { useInView } from "react-intersection-observer";
+import Button from "../../components/Button/Button";
+import Card from "../../components/Card/Card";
+import styles from "./About.module.scss";
 
 const About: React.FC = () => {
   const [profileRef, profileInView] = useInView({
@@ -23,37 +23,46 @@ const About: React.FC = () => {
   });
 
   const skills = [
-    { name: 'JavaScript/TypeScript', level: 95 },
-    { name: 'React/Next.js', level: 90 },
-    { name: 'Node.js/Express', level: 85 },
-    { name: 'MongoDB/PostgreSQL', level: 80 },
-    { name: 'Python/Django', level: 75 },
-    { name: 'AWS/Docker', level: 70 },
+    { name: "JavaScript/TypeScript", level: 95 },
+    { name: "React/Next.js", level: 90 },
+    { name: "Node.js", level: 85 },
+    { name: "MongoDB/PostgreSQL", level: 80 },
+    { name: "Python/Django", level: 60 },
+    { name: "AWS/Docker", level: 50 },
   ];
 
-  const experiences = [
-    {
-      company: 'Tech Startup',
-      position: 'Frontend Developer Intern',
-      duration: 'Jun 2023 - Dec 2023',
-      description: 'Developed responsive web applications using React and TypeScript. Collaborated with the design team to implement pixel-perfect UI components.',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Git'],
-    },
-    {
-      company: 'Digital Agency',
-      position: 'Fullstack Developer Intern',
-      duration: 'Jan 2024 - Present',
-      description: 'Built end-to-end web solutions using MERN stack. Optimized application performance and implemented RESTful APIs.',
-      technologies: ['MongoDB', 'Express.js', 'React', 'Node.js', 'AWS'],
-    },
-  ];
+  // const experiences = [
+  //   {
+  //     company: "Tech Startup",
+  //     position: "Frontend Developer Intern",
+  //     duration: "Jun 2023 - Dec 2023",
+  //     description:
+  //       "Developed responsive web applications using React and TypeScript. Collaborated with the design team to implement pixel-perfect UI components.",
+  //     technologies: ["React", "TypeScript", "Tailwind CSS", "Git"],
+  //   },
+  //   {
+  //     company: "Digital Agency",
+  //     position: "Fullstack Developer Intern",
+  //     duration: "Jan 2024 - Present",
+  //     description:
+  //       "Built end-to-end web solutions using MERN stack. Optimized application performance and implemented RESTful APIs.",
+  //     technologies: ["MongoDB", "Express.js", "React", "Node.js", "AWS"],
+  //   },
+  // ];
 
   const education = [
     {
-      institution: 'Pontifical Catholic University',
-      degree: 'Computer Engineering',
-      duration: '2021 - 2025',
-      description: 'Focus on software development, algorithms, and system design.',
+      institution: "Alva's Institute of Engineering and Technology",
+      degree: "Computer Science and Engineering",
+      duration: "2022 - 2026",
+      description: "Focused on software development, DSA, OS and DBMS.",
+    },
+    {
+      degree: "Pre University Course",
+      institution: "Siddaganga PU College ",
+      duration: "2021 - 2022",
+      description:
+        "Specialized in science and mathematics, laying the foundation for engineering studies.",
     },
   ];
 
@@ -69,50 +78,49 @@ const About: React.FC = () => {
             transition={{ duration: 0.8 }}
           >
             <div className={styles.profileImage}>
-              <img
-                src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=400"
-                alt="Your Name"
-              />
+              <img src="../../images/profile.jpeg" alt="profile pic" />
             </div>
             <div className={styles.profileInfo}>
-              <h1>Your Name</h1>
-              <h2>Fullstack Developer / MERN + Next.js Specialist</h2>
+              <h1>SRUSHTI N B</h1>
+              <h2>Fullstack Developer | AI Enthusiast</h2>
               <div className={styles.profileMeta}>
                 <span className={styles.metaItem}>
                   <MapPin size={16} />
-                  São Paulo, Brazil
+                  Davanagere, Karnataka
                 </span>
                 <span className={styles.metaItem}>
                   <Calendar size={16} />
-                  Available for hire
+                  Open to Opportunities
                 </span>
               </div>
               <p className={styles.profileDescription}>
-                I'm a passionate fullstack developer with a strong foundation in modern web technologies.
-                My journey began with curiosity about how websites work, and it has evolved into a deep
-                love for creating digital experiences that solve real-world problems. I specialize in the
-                MERN stack and Next.js, always striving to write clean, efficient code that makes a difference.
+                I'm a passionate fullstack developer with a strong foundation in
+                modern web technologies. My journey began with curiosity about
+                how websites work, and it has evolved into a deep love for
+                creating digital experiences that solve real-world problems. I
+                specialize in the MERN stack and Next.js,striving to write
+                clean, efficient code that makes a difference.
               </p>
               <div className={styles.socialButtons}>
                 <Button
                   variant="primary"
-                  href="https://github.com"
+                  href="https://github.com/srushtinb"
                   external
                   icon={<Github size={20} />}
                 >
                   GitHub
                 </Button>
                 <Button
-                  variant="outline"
-                  href="https://linkedin.com"
+                  variant="primary"
+                  href="https://www.linkedin.com/in/srushtinb/"
                   external
                   icon={<Linkedin size={20} />}
                 >
                   LinkedIn
                 </Button>
                 <Button
-                  variant="secondary"
-                  href="mailto:your.email@example.com"
+                  variant="primary"
+                  href="mailto:srushtiicse@gmail.com"
                   icon={<Mail size={20} />}
                 >
                   Email
@@ -168,9 +176,9 @@ const About: React.FC = () => {
             animate={experienceInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
           >
-            <h3 className={styles.sectionTitle}>Experience & Education</h3>
-            
-            <div className={styles.timelineSection}>
+            <h3 className={styles.sectionTitle}>Education</h3>
+            {/* internships or expe */}
+            {/* <div className={styles.timelineSection}>
               <h4>Internships</h4>
               <div className={styles.timeline}>
                 {experiences.map((exp, index) => (
@@ -199,10 +207,10 @@ const About: React.FC = () => {
                   </motion.div>
                 ))}
               </div>
-            </div>
+            </div> */}
 
             <div className={styles.timelineSection}>
-              <h4>Education</h4>
+              {/* <h4>Education</h4> */}
               <div className={styles.timeline}>
                 {education.map((edu, index) => (
                   <motion.div
@@ -215,7 +223,9 @@ const About: React.FC = () => {
                     <Card className={styles.educationCard}>
                       <div className={styles.cardHeader}>
                         <h5>{edu.degree}</h5>
-                        <span className={styles.institution}>{edu.institution}</span>
+                        <span className={styles.institution}>
+                          {edu.institution}
+                        </span>
                         <span className={styles.duration}>{edu.duration}</span>
                       </div>
                       <p className={styles.description}>{edu.description}</p>

@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { X, Filter } from 'lucide-react';
-import { useInView } from 'react-intersection-observer';
-import Button from '../../components/Button/Button';
-import styles from './Gallery.module.scss';
-import type { GalleryItem } from '../../types';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { X } from "lucide-react";
+import { useInView } from "react-intersection-observer";
+import styles from "./Gallery.module.scss";
+import type { GalleryItem } from "../../types";
 
 const Gallery: React.FC = () => {
-  const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [selectedImage, setSelectedImage] = useState<GalleryItem | null>(null);
 
   const [headerRef, headerInView] = useInView({
@@ -22,103 +20,133 @@ const Gallery: React.FC = () => {
 
   const galleryItems: GalleryItem[] = [
     {
-      id: '1',
-      title: 'AWS Cloud Practitioner Certificate',
-      image: 'https://images.pexels.com/photos/5940721/pexels-photo-5940721.jpeg?auto=compress&cs=tinysrgb&w=400',
-      category: 'certificate',
-      description: 'Certified AWS Cloud Practitioner - Foundation level certification'
+      id: "1",
+      title: "Hackathon Participation",
+      image: "../../images/p10.jpeg",
+      category: "hackathon",
+      description:
+        "Participated in the National Level Hackathon at VVCE, Mysore, showcasing innovative problem-solving and teamwork. Collaborated with peers to develop creative solutions and present ideas to industry experts.",
     },
     {
-      id: '2',
-      title: 'React Developer Certificate',
-      image: 'https://images.pexels.com/photos/5940722/pexels-photo-5940722.jpeg?auto=compress&cs=tinysrgb&w=400',
-      category: 'certificate',
-      description: 'Advanced React development certification'
+      id: "2",
+      title: "Hackathon Participation Certificate",
+      image: "../../images/p2.jpeg",
+      category: "certificate",
+      description:
+        "Received certification for participating in the National Level Hackathon at VVCE, Mysore, recognizing my contribution to innovative problem-solving and teamwork ",
     },
     {
-      id: '3',
-      title: 'Tech Hackathon 2024',
-      image: 'https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress&cs=tinysrgb&w=400',
-      category: 'hackathon',
-      description: 'Won 2nd place in the annual tech hackathon'
+      id: "3",
+      title: "Computational thinking workshop",
+      image: "../../images/p7.jpeg",
+      category: "workshop",
+      description:
+        "Conducting a Computational Thinking workshop to introduce students to problem-solving concepts",
     },
     {
-      id: '4',
-      title: 'Coding Bootcamp Graduation',
-      image: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=400',
-      category: 'achievement',
-      description: 'Graduated from intensive coding bootcamp'
+      id: "4",
+      title: "Teaching Scratch Programming",
+      image: "../../images/p5.jpeg",
+      category: "workshop",
+      description:
+        "Teaching Scratch programming to help students learn coding through creativity and fun",
     },
     {
-      id: '5',
-      title: 'Tech Conference 2023',
-      image: 'https://images.pexels.com/photos/3184434/pexels-photo-3184434.jpeg?auto=compress&cs=tinysrgb&w=400',
-      category: 'event',
-      description: 'Attended React Conference 2023'
+      id: "5",
+      title: "CT workshop",
+      image: "../../images/p6.jpeg",
+      category: "workshop",
+      description:
+        "Interacting with students and encouraging their participation during the workshop",
     },
     {
-      id: '6',
-      title: 'Development Team',
-      image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400',
-      category: 'group',
-      description: 'Team photo from software development internship'
+      id: "6",
+      title: "Codechef Badge",
+      image: "../../images/p14.jpeg",
+      category: "achievement",
+      description:
+        "Earned the Diamond Badge from CodeChef for completing a 100-day coding streak, demonstrating consistency and problem-solving skills",
     },
     {
-      id: '7',
-      title: 'Node.js Certificate',
-      image: 'https://images.pexels.com/photos/5940724/pexels-photo-5940724.jpeg?auto=compress&cs=tinysrgb&w=400',
-      category: 'certificate',
-      description: 'Node.js and Express.js certification'
+      id: "7",
+      title: "MRF-Nitte",
+      image: "../../images/p1.jpeg",
+      category: "volunteer",
+      description:
+        "Visited the Material Recovery Facility at Nitte to understand plastic waste management and recovery",
     },
     {
-      id: '8',
-      title: 'AI/ML Hackathon',
-      image: 'https://images.pexels.com/photos/3184302/pexels-photo-3184302.jpeg?auto=compress&cs=tinysrgb&w=400',
-      category: 'hackathon',
-      description: 'Participated in AI/ML focused hackathon'
+      id: "8",
+      title: "Hackathon team",
+      image: "../../images/p11.jpeg",
+      category: "hackathon",
+      description:
+        "With my teammates at the National Level Hackathon, collaborating on innovative problem-solving ideas.",
     },
     {
-      id: '9',
-      title: 'Open Source Contribution',
-      image: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=400',
-      category: 'achievement',
-      description: 'First major open source contribution accepted'
+      id: "9",
+      title: "Group Picture ",
+      image: "../../images/p12.jpeg",
+      category: "group",
+      description:
+        "Group photo with participants at VVCE Mysore Hackathon, celebrating teamwork and shared learning",
     },
     {
-      id: '10',
-      title: 'University Tech Fair',
-      image: 'https://images.pexels.com/photos/3184435/pexels-photo-3184435.jpeg?auto=compress&cs=tinysrgb&w=400',
-      category: 'event',
-      description: 'Presenting project at university tech fair'
+      id: "10",
+      title: "IOS APP Development Training",
+      image: "../../images/p15.jpeg",
+      category: "certificate",
+      description:
+        "Completed iOS App Development training conducted by KSDC, gaining hands-on experience in mobile application development",
     },
     {
-      id: '11',
-      title: 'Study Group',
-      image: 'https://images.pexels.com/photos/3184466/pexels-photo-3184466.jpeg?auto=compress&cs=tinysrgb&w=400',
-      category: 'group',
-      description: 'Weekly coding study group sessions'
+      id: "11",
+      title: "C-Maniax",
+      image: "../../images/p13.jpeg",
+      category: "event",
+      description:
+        "Part of the C Maniax team, where we successfully conducted engaging departmental events - CSE Department",
     },
     {
-      id: '12',
-      title: 'Best Project Award',
-      image: 'https://images.pexels.com/photos/3184340/pexels-photo-3184340.jpeg?auto=compress&cs=tinysrgb&w=400',
-      category: 'achievement',
-      description: 'Received best project award for final year project'
+      id: "12",
+      title: "CT Workshop",
+      image: "../../images/p4.jpeg",
+      category: "workshop",
+      description:
+        "With students and fellow coordinators after a successful Computational Thinking Workshop session",
+    },
+    {
+      id: "13",
+      title: "NSS",
+      image: "../../images/p8.jpeg",
+      category: "volunteer",
+      description:
+        "Volunteered through NSS to introduce rural students to fundamental computer skills",
+    },
+    {
+      id: "14",
+      title: "PU",
+      image: "../../images/p9.jpeg",
+      category: "achievement",
+      description:
+        "Honored with a appreciation trophy in recognition of academic excellence in PU PCMB.",
+    },
+    {
+      id: "15",
+      title: "NSS",
+      image: "../../images/p16.jpeg",
+      category: "volunteer",
+      description:
+        "Contributed to NSS eco-drive by planting a plant in Shobavana.",
+    },
+    {
+      id: "16",
+      title: "College Event",
+      image: "../../images/p3.jpeg",
+      category: "event",
+      description: "With my teammates during college event.",
     },
   ];
-
-  const categories = [
-    { key: 'all', label: 'All' },
-    { key: 'certificate', label: 'Certificates' },
-    { key: 'hackathon', label: 'Hackathons' },
-    { key: 'event', label: 'Events' },
-    { key: 'group', label: 'Group Photos' },
-    { key: 'achievement', label: 'Achievements' },
-  ];
-
-  const filteredItems = selectedCategory === 'all' 
-    ? galleryItems 
-    : galleryItems.filter(item => item.category === selectedCategory);
 
   return (
     <div className={styles.gallery}>
@@ -133,36 +161,10 @@ const Gallery: React.FC = () => {
           >
             <h1>Gallery</h1>
             <p>
-              A visual journey through my achievements, certifications, hackathons,
-              events, and memorable moments in my development career.
+              A visual journey through my achievements, certifications,
+              hackathons, events, and memorable moments in my development
+              career.
             </p>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Filter Section */}
-      <section className={styles.filters}>
-        <div className="container">
-          <motion.div
-            className={styles.filterContent}
-            initial={{ opacity: 0, y: 30 }}
-            animate={headerInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.3 }}
-          >
-            <div className={styles.filterButtons}>
-              {categories.map((category) => (
-                <Button
-                  key={category.key}
-                  variant={selectedCategory === category.key ? 'primary' : 'secondary'}
-                  size="sm"
-                  onClick={() => setSelectedCategory(category.key)}
-                  className={styles.filterButton}
-                  icon={<Filter size={16} />}
-                >
-                  {category.label}
-                </Button>
-              ))}
-            </div>
           </motion.div>
         </div>
       </section>
@@ -176,38 +178,27 @@ const Gallery: React.FC = () => {
             animate={galleryInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.6 }}
           >
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={selectedCategory}
-                className={styles.masonryGrid}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.4 }}
-              >
-                {filteredItems.map((item, index) => (
-                  <motion.div
-                    key={item.id}
-                    className={styles.galleryItem}
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.4, delay: index * 0.05 }}
-                    onClick={() => setSelectedImage(item)}
-                  >
-                    <div className={styles.imageContainer}>
-                      <img src={item.image} alt={item.title} />
-                      <div className={styles.overlay}>
-                        <h3>{item.title}</h3>
-                        <p>{item.description}</p>
-                        <span className={styles.category}>
-                          {categories.find(cat => cat.key === item.category)?.label}
-                        </span>
-                      </div>
+            <div className={styles.masonryGrid}>
+              {galleryItems.map((item, index) => (
+                <motion.div
+                  key={item.id}
+                  className={styles.galleryItem}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.4, delay: index * 0.05 }}
+                  onClick={() => setSelectedImage(item)}
+                >
+                  <div className={styles.imageContainer}>
+                    <img src={item.image} alt={item.title} />
+                    <div className={styles.overlay}>
+                      <h3>{item.title}</h3>
+                      <p>{item.description}</p>
+                      <span className={styles.category}>{item.category}</span>
                     </div>
-                  </motion.div>
-                ))}
-              </motion.div>
-            </AnimatePresence>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
         </div>
       </section>
@@ -242,7 +233,7 @@ const Gallery: React.FC = () => {
                 <h3>{selectedImage.title}</h3>
                 <p>{selectedImage.description}</p>
                 <span className={styles.category}>
-                  {categories.find(cat => cat.key === selectedImage.category)?.label}
+                  {selectedImage.category}
                 </span>
               </div>
             </motion.div>

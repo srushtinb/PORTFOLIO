@@ -12,18 +12,18 @@ export interface Project {
 
 export interface Skill {
   name: string;
-  category: 'frontend' | 'backend' | 'database' | 'tools' | 'other';
+  category: "frontend" | "backend" | "database" | "tools" | "other";
   proficiency: number;
 }
 
-export interface Experience {
-  id: string;
-  company: string;
-  position: string;
-  duration: string;
-  description: string;
-  technologies: string[];
-}
+// export interface Experience {
+//   id: string;
+//   company: string;
+//   position: string;
+//   duration: string;
+//   description: string;
+//   technologies: string[];
+// }
 
 export interface Education {
   id: string;
@@ -37,7 +37,14 @@ export interface GalleryItem {
   id: string;
   title: string;
   image: string;
-  category: 'certificate' | 'hackathon' | 'event' | 'group' | 'achievement';
+  category:
+    | "certificate"
+    | "workshop"
+    | "hackathon"
+    | "event"
+    | "group"
+    | "achievement"
+    | "volunteer";
   description?: string;
 }
 
