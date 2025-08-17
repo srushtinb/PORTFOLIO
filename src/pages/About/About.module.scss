@@ -1,0 +1,241 @@
+.about {
+  padding-top: $spacing-20;
+}
+
+.profile {
+  padding: $spacing-16 0;
+  background: linear-gradient(135deg, $color-beige-light 0%, $color-light-grey 100%);
+}
+
+.profileContent {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: $spacing-16;
+  align-items: start;
+
+  @media (max-width: $breakpoint-lg) {
+    grid-template-columns: 1fr;
+    gap: $spacing-12;
+    text-align: center;
+  }
+}
+
+.profileImage {
+  img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: $border-radius-2xl;
+    box-shadow: $shadow-xl;
+
+    @media (max-width: $breakpoint-lg) {
+      width: 250px;
+      height: 250px;
+      margin: 0 auto;
+      border-radius: 50%;
+    }
+  }
+}
+
+.profileInfo {
+  h1 {
+    font-size: $font-size-4xl;
+    margin-bottom: $spacing-2;
+    color: $color-grey-700;
+
+    @media (max-width: $breakpoint-md) {
+      font-size: $font-size-3xl;
+    }
+  }
+
+  h2 {
+    font-size: $font-size-xl;
+    font-weight: $font-weight-medium;
+    color: $color-primary;
+    margin-bottom: $spacing-4;
+
+    @media (max-width: $breakpoint-md) {
+      font-size: $font-size-lg;
+    }
+  }
+}
+
+.profileMeta {
+  display: flex;
+  gap: $spacing-6;
+  margin-bottom: $spacing-6;
+
+  @media (max-width: $breakpoint-lg) {
+    justify-content: center;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    flex-direction: column;
+    gap: $spacing-2;
+  }
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: $spacing-2;
+  color: $color-grey-600;
+  font-size: $font-size-sm;
+}
+
+.profileDescription {
+  font-size: $font-size-lg;
+  line-height: 1.7;
+  color: $color-grey-600;
+  margin-bottom: $spacing-8;
+}
+
+.socialButtons {
+  display: flex;
+  gap: $spacing-4;
+  flex-wrap: wrap;
+
+  @media (max-width: $breakpoint-lg) {
+    justify-content: center;
+  }
+}
+
+.skills {
+  padding: $spacing-20 0;
+  background: $color-light-grey;
+}
+
+.sectionTitle {
+  font-size: $font-size-3xl;
+  text-align: center;
+  margin-bottom: $spacing-12;
+  color: $color-grey-700;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: $spacing-8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skillItem {
+  padding: $spacing-6;
+  background: $color-white;
+  border-radius: $border-radius-xl;
+  box-shadow: $shadow-sm;
+}
+
+.skillHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $spacing-3;
+}
+
+.skillName {
+  font-weight: $font-weight-medium;
+  color: $color-grey-700;
+}
+
+.skillLevel {
+  font-size: $font-size-sm;
+  color: $color-primary;
+  font-weight: $font-weight-semibold;
+}
+
+.skillBar {
+  height: 8px;
+  background: $color-beige;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skillProgress {
+  height: 100%;
+  background: linear-gradient(135deg, $color-primary, $color-secondary);
+  border-radius: 4px;
+}
+
+.experience {
+  padding: $spacing-20 0;
+  background: $color-beige;
+}
+
+.timelineSection {
+  margin-bottom: $spacing-16;
+
+  h4 {
+    font-size: $font-size-2xl;
+    margin-bottom: $spacing-8;
+    color: $color-grey-700;
+    text-align: center;
+  }
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timelineItem {
+  position: relative;
+}
+
+.experienceCard,
+.educationCard {
+  padding: $spacing-8;
+}
+
+.cardHeader {
+  margin-bottom: $spacing-4;
+
+  h5 {
+    font-size: $font-size-xl;
+    margin-bottom: $spacing-2;
+    color: $color-grey-700;
+  }
+}
+
+.company,
+.institution {
+  display: block;
+  font-weight: $font-weight-medium;
+  color: $color-primary;
+  margin-bottom: $spacing-2;
+}
+
+.duration {
+  display: inline-block;
+  padding: $spacing-1 $spacing-3;
+  background: rgba($color-primary, 0.1);
+  color: $color-primary;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-medium;
+  border-radius: $border-radius-lg;
+}
+
+.description {
+  color: $color-grey-600;
+  line-height: 1.6;
+  margin-bottom: $spacing-4;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-2;
+}
+
+.techTag {
+  padding: $spacing-1 $spacing-3;
+  background: $color-beige-light;
+  color: $color-grey-700;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-medium;
+  border-radius: $border-radius-md;
+}

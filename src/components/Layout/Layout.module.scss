@@ -1,0 +1,13 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: linear-gradient(135deg, $color-beige-light 0%, $color-light-grey 50%, $color-beige 100%);
+}
+
+.main {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
