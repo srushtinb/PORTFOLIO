@@ -22,7 +22,7 @@ const Gallery: React.FC = () => {
     {
       id: "1",
       title: "Hackathon Participation",
-      image: "../../images/p10.jpeg",
+      image: "/p10.jpeg",
       category: "hackathon",
       description:
         "Participated in the National Level Hackathon at VVCE, Mysore, showcasing innovative problem-solving and teamwork. Collaborated with peers to develop creative solutions and present ideas to industry experts.",
@@ -30,7 +30,7 @@ const Gallery: React.FC = () => {
     {
       id: "2",
       title: "Hackathon Participation Certificate",
-      image: "../../images/p2.jpeg",
+      image: "/p2.jpeg",
       category: "certificate",
       description:
         "Received certification for participating in the National Level Hackathon at VVCE, Mysore, recognizing my contribution to innovative problem-solving and teamwork ",
@@ -38,7 +38,7 @@ const Gallery: React.FC = () => {
     {
       id: "3",
       title: "Computational thinking workshop",
-      image: "../../images/p7.jpeg",
+      image: "p7.jpeg",
       category: "workshop",
       description:
         "Conducting a Computational Thinking workshop to introduce students to problem-solving concepts",
@@ -46,7 +46,7 @@ const Gallery: React.FC = () => {
     {
       id: "4",
       title: "Teaching Scratch Programming",
-      image: "../../images/p5.jpeg",
+      image: "/p5.jpeg",
       category: "workshop",
       description:
         "Teaching Scratch programming to help students learn coding through creativity and fun",
@@ -54,7 +54,7 @@ const Gallery: React.FC = () => {
     {
       id: "5",
       title: "CT workshop",
-      image: "../../images/p6.jpeg",
+      image: "/p6.jpeg",
       category: "workshop",
       description:
         "Interacting with students and encouraging their participation during the workshop",
@@ -62,7 +62,7 @@ const Gallery: React.FC = () => {
     {
       id: "6",
       title: "Codechef Badge",
-      image: "../../images/p14.jpeg",
+      image: "/p14.jpeg",
       category: "achievement",
       description:
         "Earned the Diamond Badge from CodeChef for completing a 100-day coding streak, demonstrating consistency and problem-solving skills",
@@ -70,7 +70,7 @@ const Gallery: React.FC = () => {
     {
       id: "7",
       title: "MRF-Nitte",
-      image: "../../images/p1.jpeg",
+      image: "/p1.jpeg",
       category: "volunteer",
       description:
         "Visited the Material Recovery Facility at Nitte to understand plastic waste management and recovery",
@@ -78,7 +78,7 @@ const Gallery: React.FC = () => {
     {
       id: "8",
       title: "Hackathon team",
-      image: "../../images/p11.jpeg",
+      image: "/p11.jpeg",
       category: "hackathon",
       description:
         "With my teammates at the National Level Hackathon, collaborating on innovative problem-solving ideas.",
@@ -86,7 +86,7 @@ const Gallery: React.FC = () => {
     {
       id: "9",
       title: "Group Picture ",
-      image: "../../images/p12.jpeg",
+      image: "/p12.jpeg",
       category: "group",
       description:
         "Group photo with participants at VVCE Mysore Hackathon, celebrating teamwork and shared learning",
@@ -94,7 +94,7 @@ const Gallery: React.FC = () => {
     {
       id: "10",
       title: "IOS APP Development Training",
-      image: "../../images/p15.jpeg",
+      image: "/p15.jpeg",
       category: "certificate",
       description:
         "Completed iOS App Development training conducted by KSDC, gaining hands-on experience in mobile application development",
@@ -102,7 +102,7 @@ const Gallery: React.FC = () => {
     {
       id: "11",
       title: "C-Maniax",
-      image: "../../images/p13.jpeg",
+      image: "/p13.jpeg",
       category: "event",
       description:
         "Part of the C Maniax team, where we successfully conducted engaging departmental events - CSE Department",
@@ -110,7 +110,7 @@ const Gallery: React.FC = () => {
     {
       id: "12",
       title: "CT Workshop",
-      image: "../../images/p4.jpeg",
+      image: "/p4.jpeg",
       category: "workshop",
       description:
         "With students and fellow coordinators after a successful Computational Thinking Workshop session",
@@ -118,7 +118,7 @@ const Gallery: React.FC = () => {
     {
       id: "13",
       title: "NSS",
-      image: "../../images/p8.jpeg",
+      image: "/p8.jpeg",
       category: "volunteer",
       description:
         "Volunteered through NSS to introduce rural students to fundamental computer skills",
@@ -126,7 +126,7 @@ const Gallery: React.FC = () => {
     {
       id: "14",
       title: "PU",
-      image: "../../images/p9.jpeg",
+      image: "/p9.jpeg",
       category: "achievement",
       description:
         "Honored with a appreciation trophy in recognition of academic excellence in PU PCMB.",
@@ -134,7 +134,7 @@ const Gallery: React.FC = () => {
     {
       id: "15",
       title: "NSS",
-      image: "../../images/p16.jpeg",
+      image: "/p16.jpeg",
       category: "volunteer",
       description:
         "Contributed to NSS eco-drive by planting a plant in Shobavana.",
@@ -142,7 +142,7 @@ const Gallery: React.FC = () => {
     {
       id: "16",
       title: "College Event",
-      image: "../../images/p3.jpeg",
+      image: "/p3.jpeg",
       category: "event",
       description: "With my teammates during college event.",
     },

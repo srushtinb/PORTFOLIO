@@ -66,7 +66,7 @@ const Home: React.FC = () => {
             >
               <div className={styles.imageWrapper}>
                 <img
-                  src="../../images/profile.jpeg"
+                  src="/profile.jpeg"
                   alt="profile pic"
                   className={styles.profileImage}
                 />

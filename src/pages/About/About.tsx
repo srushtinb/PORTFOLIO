@@ -78,7 +78,7 @@ const About: React.FC = () => {
             transition={{ duration: 0.8 }}
           >
             <div className={styles.profileImage}>
-              <img src="../../images/profile.jpeg" alt="profile pic" />
+              <img src="/profile.jpeg" alt="profile pic" />
             </div>
             <div className={styles.profileInfo}>
               <h1>SRUSHTI N B</h1>
