@@ -44,7 +44,7 @@ const Work: React.FC = () => {
       description:
         "SruAura, which offers interior design solutions for homes. The website provides various features such as design ideas, booking quotes, and information about the company. It is built using HTML, CSS, and JavaScript.",
       image: "/sruaura.png",
-      technologies: ["React", "Node.js", "MongoDB", "Express", "Chart.js"],
+      technologies: ["HTML", "CSS", "JavaScript"],
       liveUrl: "https://srushtinb.github.io/SruAura/",
       githubUrl: "https://github.com/srushtinb/SruAura",
       //caseStudyUrl: "/case-study/it-inventory",
