@@ -24,7 +24,7 @@ const Work: React.FC = () => {
       title: "PrepGenius – AI Career Coach (ONGOING)",
       description:
         "An intelligent career coaching platform that uses AI to help users prepare for interviews, build resumes, and advance their careers. Built with Next.js, TypeScript, and OpenAI API.",
-      image: "../../images/prepgenius.png",
+      image: "/prepgenius.png",
       technologies: [
         "Next.js",
         "TypeScript",
