@@ -43,7 +43,7 @@ const Work: React.FC = () => {
       title: "SruAura-An Interior Design Website",
       description:
         "SruAura, which offers interior design solutions for homes. The website provides various features such as design ideas, booking quotes, and information about the company. It is built using HTML, CSS, and JavaScript.",
-      image: "../../images/sruaura.png",
+      image: "/sruaura.png",
       technologies: ["React", "Node.js", "MongoDB", "Express", "Chart.js"],
       liveUrl: "https://srushtinb.github.io/SruAura/",
       githubUrl: "https://github.com/srushtinb/SruAura",
@@ -55,7 +55,7 @@ const Work: React.FC = () => {
       title: "SruNova-ChatBot",
       description:
         "A command-line based AI chatbot that enables seamless and intelligent conversations directly from the terminal. Built with Node.js and OpenAI API integration, it’s lightweight, fast, and customizable for different use cases.",
-      image: "../../images/chatbot.jpeg",
+      image: "/chatbot.jpeg",
       technologies: ["JavaScript", "Gemini API", "Node.js"],
       //liveUrl: "https://ecommerce.example.com",
       githubUrl: "https://github.com/srushtinb/SruNova-ChatBot",
@@ -66,7 +66,7 @@ const Work: React.FC = () => {
       title: "To-Do List",
       description:
         "This is a simple To-Do List web application built with HTML, CSS, and JavaScript. It allows users to add, remove, and mark tasks as completed. This project helps users keep track of their tasks in a clean and easy-to-use interface.",
-      image: "../../images/todo.png",
+      image: "/todo.png",
       technologies: ["HTML", "CSS", "JavaScript"],
       liveUrl: "https://srushtinb.github.io/To-Do/",
       githubUrl: "https://github.com/srushtinb/To-Do",
@@ -77,7 +77,7 @@ const Work: React.FC = () => {
       title: "Employee Management System",
       description:
         "An Employee Management System built with React for managing employees and their assigned tasks. It includes features for adding, deleting employees, and managing tasks (New, Completed, Failed) with local storage persistence.",
-      image: "../../images/emp.png",
+      image: "/emp.png",
       technologies: [
         "React",
         "React Context API",
