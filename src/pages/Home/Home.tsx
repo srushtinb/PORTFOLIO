@@ -33,10 +33,10 @@ const Home: React.FC = () => {
               <h1 className={styles.heroTitle}>
                 Hi, I'm <span className={styles.highlight}>SRUSHTI N B</span>
               </h1>
-              <h2 className={styles.heroSubtitle}>Fullstack Developer</h2>
+              <h2 className={styles.heroSubtitle}>Web Developer</h2>
               <p className={styles.heroDescription}>
-                Computer Science Engineer | Full-Stack Developer | AI Enthusiast
-                | Passionate about Creating Innovative Web Applications
+                Computer Science Engineer | Web Developer | AI Enthusiast |
+                Passionate about Creating Innovative Web Applications
               </p>
               <div className={styles.heroButtons}>
                 <Button
@@ -89,8 +89,8 @@ const Home: React.FC = () => {
             <div className={styles.introText}>
               <h3>About Me</h3>
               <p>
-                I'm a passionate fullstack developer with expertise in the MERN
-                stack and Next.js. I love turning complex problems into simple,
+                I'm a passionate Web developer with expertise in the MERN stack
+                and Next.js. I love turning complex problems into simple,
                 beautiful, and intuitive solutions. When I'm not coding, you'll
                 find me exploring new technologies, contributing to open source,
                 or sharing knowledge with the developer community.
