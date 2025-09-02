@@ -82,7 +82,7 @@ const About: React.FC = () => {
             </div>
             <div className={styles.profileInfo}>
               <h1>SRUSHTI N B</h1>
-              <h2>Fullstack Developer | AI Enthusiast</h2>
+              <h2>Web Developer | AI Enthusiast</h2>
               <div className={styles.profileMeta}>
                 <span className={styles.metaItem}>
                   <MapPin size={16} />
@@ -94,7 +94,7 @@ const About: React.FC = () => {
                 </span>
               </div>
               <p className={styles.profileDescription}>
-                I'm a passionate fullstack developer with a strong foundation in
+                I'm a passionate web developer with a strong foundation in
                 modern web technologies. My journey began with curiosity about
                 how websites work, and it has evolved into a deep love for
                 creating digital experiences that solve real-world problems. I
