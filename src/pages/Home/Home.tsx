@@ -50,7 +50,7 @@ const Home: React.FC = () => {
                 <Button
                   variant="outline"
                   size="lg"
-                  href="/Srushti N B.pdf"
+                  href="/Srushti N Bres.pdf"
                   external
                   icon={<Download size={20} />}
                 >
